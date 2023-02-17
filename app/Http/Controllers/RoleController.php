@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\DataTables\RoleDataTable;
 use Illuminate\Http\Request;
 
 class RoleController extends Controller
@@ -11,9 +12,10 @@ class RoleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(RoleDataTable $dataTable)
     {
-        return view('pages.admin.roles.index');
+        $this->authorize('read menu');
+        return $dataTable->render('pages.admin.roles.index');
     }
 
     /**
