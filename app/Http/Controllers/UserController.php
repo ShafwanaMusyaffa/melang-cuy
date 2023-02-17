@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class RoleController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class RoleController extends Controller
      */
     public function index()
     {
-        return view('pages.admin.roles.index');
+        //
     }
 
     /**
@@ -23,7 +23,7 @@ class RoleController extends Controller
      */
     public function create()
     {
-        return view('pages.admin.roles.create');
+        //
     }
 
     /**

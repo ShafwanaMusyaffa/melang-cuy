@@ -8,7 +8,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/vendor/css/bootstrap.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/page.css">
 
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">

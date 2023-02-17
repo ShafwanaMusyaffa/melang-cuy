@@ -48,10 +48,7 @@ class UserSeeder extends Seeder
         $permission = Permission::create(['name' => 'update menu']);
         $permission = Permission::create(['name' => 'delete menu']);
 
-        $role_admin->givePermissionTo('read menu');
-        $role_admin->givePermissionTo('create menu');
-        $role_admin->givePermissionTo('update menu');
-        $role_admin->givePermissionTo('delete menu');
+        $role_admin->givePermissionTo(['create menu', 'read menu', 'update menu', 'delete menu']);
 
         $admin->assignRole('admin');
         $staff->assignRole('staff');

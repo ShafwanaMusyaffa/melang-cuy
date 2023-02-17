@@ -15,7 +15,7 @@
     </div>
 
     <div class="section-body">
-      <a href="http://" class="btn bg-primary text-white">Tambah Data Role</a>
+      <a href="{{ route('roles.create') }}" class="btn bg-primary text-white">Tambah Data Role</a>
       <div class="row pt-3">
         <div class="col-12">
           <div class="card">

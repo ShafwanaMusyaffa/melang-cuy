@@ -15,7 +15,9 @@
     </div>
 
     <div class="section-body">
-      <a href="http://" class="btn bg-primary text-white">Tambah Data Users</a>
+      @can('read menu')
+      <a href="" class="btn bg-primary text-white">Tambah Data Users</a>
+      @endcan
       <div class="row pt-3">
         <div class="col-12">
           <div class="card">
