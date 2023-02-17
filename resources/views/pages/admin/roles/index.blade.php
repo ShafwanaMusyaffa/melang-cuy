@@ -7,15 +7,15 @@
 @section('content')
   <section class="section">
     <div class="section-header">
-      <h1>Data Role</h1>
+      <h1>Data Roles</h1>
       <div class="section-header-breadcrumb">
         <div class="breadcrumb-item active"><a href="{{ route('dashboard') }}">Dashboard</a></div>
-        <div class="breadcrumb-item">Users</div>
+        <div class="breadcrumb-item">Roles</div>
       </div>
     </div>
 
     <div class="section-body">
-      <a href="{{ route('roles.create') }}" class="btn bg-primary text-white">Tambah Data Role</a>
+      <a href="{{ route('roles.create') }}" class="btn bg-primary text-white">Create New Role</a>
       <div class="row pt-3">
         <div class="col-12">
           <div class="card">

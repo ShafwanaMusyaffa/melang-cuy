@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
 
 /*
@@ -31,12 +32,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', function () {
         return view('pages.admin.dashboard');
     })->name('dashboard');
-    Route::get('/dashboard/users', function () {
-        return view('pages.admin.users.index');
-    })->name('dashboard-users');
-    Route::get('/dashboard', function () {
-        return view('pages.admin.dashboard');
-    })->name('dashboard');
+
+    // Users
+    Route::resource('dashboard/users', UserController::class);
 
     // Roles
     Route::resource('dashboard/roles', RoleController::class);

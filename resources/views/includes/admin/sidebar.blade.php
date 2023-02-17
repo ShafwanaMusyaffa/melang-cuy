@@ -19,25 +19,25 @@
       <li class="dropdown {{ (request()->is('dashboard')) ? 'active' : '' }}">
         <a href="{{ route('dashboard') }}" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
       </li>
-      <li class="dropdown {{ (request()->is('dashboard/users')) ? 'active' : '' }}">
-        <a href="{{ route('dashboard-users') }}" class="nav-link"><i class="fas fa-bullhorn"></i></i><span>Lelang</span></a>
+      <li class="dropdown {{ (request()->is('dashboard/auction')) ? 'active' : '' }}">
+        <a href="#" class="nav-link"><i class="fas fa-bullhorn"></i></i><span>Auctions</span></a>
       </li>
       <li class="dropdown {{ (request()->is('dashboard/produk')) ? 'active' : '' }}">
-        <a href="{{ route('dashboard-users') }}" class="nav-link"><i class="far fa-user"></i><span>Produk</span></a>
+        <a href="#" class="nav-link"><i class="fas fa-luggage-cart"></i><span>Products</span></a>
       </li>
       <li class="menu-header">Database Master</li>
       <li class="dropdown {{ (request()->is('dashboard/users')) ? 'active' : '' }}">
-        <a href="{{ route('dashboard-users') }}" class="nav-link"><i class="far fa-user"></i><span>User</span></a>
+        <a href="{{ route('users.index') }}" class="nav-link"><i class="fas fa-users"></i><span>User</span></a>
       </li>
-      <li class="dropdown {{ (request()->is('dashboard/users')) ? 'active' : '' }}">
-        <a href="{{ route('dashboard-users') }}" class="nav-link"><i class="far fa-user"></i><span>Roles</span></a>
+      <li class="dropdown {{ (request()->is('dashboard/roles')) ? 'active' : '' }}">
+        <a href="{{ route('roles.index') }}" class="nav-link"><i class="fas fa-user-tag"></i><span>Roles</span></a>
       </li>
-      <li class="dropdown {{ (request()->is('dashboard/users')) ? 'active' : '' }}">
-        <a href="{{ route('dashboard-users') }}" class="nav-link"><i class="far fa-user"></i><span>Categories</span></a>
+      <li class="dropdown {{ (request()->is('dashboard/#')) ? 'active' : '' }}">
+        <a href="#" class="nav-link"><i class="fas fa-tags"></i><span>Categories</span></a>
       </li>
       @can('read menu')
       <li class="dropdown">
-        <a href="#" class="nav-link has-dropdown"><i class="fas fa-ellipsis-h"></i> <span>Pages</span></a>
+        <a href="#" class="nav-link has-dropdown"><i class="fas fa-columns"></i><span>Pages</span></a>
         <ul class="dropdown-menu">
           <li><a class="nav-link " href="utilities-contact.html">Produk</a></li>
           <li><a class="nav-link {{ (request()->is('dashboard/event')) ? 'active' : '' }}" href="utilities-invoice.html">Event</a></li>
